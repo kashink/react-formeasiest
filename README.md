@@ -1,13 +1,13 @@
-# kashink-lib-test
+# react-easy-form
 
 > Made with create-react-library
 
-[![NPM](https://img.shields.io/npm/v/kashink-lib-test.svg)](https://www.npmjs.com/package/kashink-lib-test) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-easy-form.svg)](https://www.npmjs.com/package/react-easy-form) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save kashink-lib-test
+npm install --save react-easy-form
 ```
 
 ## Usage
@@ -15,8 +15,8 @@ npm install --save kashink-lib-test
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'kashink-lib-test'
-import 'kashink-lib-test/dist/index.css'
+import MyComponent from 'react-easy-form'
+import 'react-easy-form/dist/index.css'
 
 class Example extends Component {
   render() {
