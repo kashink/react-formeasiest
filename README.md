@@ -56,7 +56,7 @@ const App = () => {
     //values contain all the form fields values
   }
 
-  return <><Form formSteps={formSteps} handleFinish={handleFinish} /></>
+  return <Form formSteps={formSteps} handleFinish={handleFinish} />
 }
 ```
 
