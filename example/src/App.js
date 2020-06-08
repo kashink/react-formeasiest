@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { Form } from 'react-formeasiest'
-import 'react-formeasiest/dist/index.css'
 
 const App = () => {
   const cpfHandler = cpf => {
