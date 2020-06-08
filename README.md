@@ -1,13 +1,13 @@
-# react-easy-form
+# react-formeasiest
 
 > Made with create-react-library
 
-[![NPM](https://img.shields.io/npm/v/react-easy-form.svg)](https://www.npmjs.com/package/react-easy-form) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-formeasiest.svg)](https://www.npmjs.com/package/react-formeasiest) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react-easy-form
+npm install --save react-formeasiest
 ```
 
 ## Usage
@@ -15,8 +15,8 @@ npm install --save react-easy-form
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-easy-form'
-import 'react-easy-form/dist/index.css'
+import MyComponent from 'react-formeasiest'
+import 'react-formeasiest/dist/index.css'
 
 class Example extends Component {
   render() {

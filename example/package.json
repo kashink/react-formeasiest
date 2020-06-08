@@ -1,13 +1,13 @@
 {
-  "name": "kashink-lib-test-example",
-  "homepage": "https://Kashink.github.io/kashink-lib-test",
+  "name": "react-formeasiest-example",
+  "homepage": "https://Kashink.github.io/react-formeasiest",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-scripts": "file:../node_modules/react-scripts",
-    "kashink-lib-test": "file:.."
+    "react-formeasiest": "file:.."
   },
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",

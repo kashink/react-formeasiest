@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { Form } from 'kashink-lib-test'
-import 'kashink-lib-test/dist/index.css'
+import { Form } from 'react-formeasiest'
+import 'react-formeasiest/dist/index.css'
 
 const App = () => {
   const cpfHandler = cpf => {
