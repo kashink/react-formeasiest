@@ -25,14 +25,14 @@ const App = () => {
   //example of form
   const formSteps = [
     {
-      title: 'Step 1',
+      title: 'Step 1',                        //title of the step
       fields: [{
-        name: 'field1',
-        placeholder: 'Field 1',
-        required: true,
-        errorMessage: 'Field 1 is required',
-        requiredHandler: specificHandler,
-        mask: 'ZZZ.ZZZ-ZZ'
+        name: 'field1',                       //field identifier
+        placeholder: 'Field 1',               //field placeholder
+        required: true,                       //flag required (true: disable button until field is valid)
+        errorMessage: 'Field 1 is required',  //Message to show when required field is wrong
+        requiredHandler: specificHandler,     //Custom field validator (default is value.length >= 1)
+        mask: 'ZZZ.ZZZ-ZZ'                    //Mask (9 for number, Z for text), default has no mask
       },
       {
         name: 'date',
