@@ -92,8 +92,11 @@ const FormStep = ({ formFields, nextStep, stepConfig }) => {
     let fieldsForm = {}
     let fieldsError = {}
     stepConfig.fields.forEach((field) => {
-      fieldsForm = { ...fieldsForm, [field.name]: '' }
-      fieldsError = { ...fieldsForm, [field.name]: false }
+      fieldsForm = {
+        ...fieldsForm,
+        [field.name]: formFields ? formFields[field.name] || '' : ''
+      }
+      fieldsError = { ...fieldsError, [field.name]: false }
     })
     setNewValues(fieldsForm)
     setValuesError(fieldsError)
@@ -105,13 +108,24 @@ const FormStep = ({ formFields, nextStep, stepConfig }) => {
 
   const handleButtonEnabled = () => {
     let isButtonInvalid = false
+    let fieldsError = {}
     stepConfig.fields.forEach((field) => {
       if (
         field.required &&
         inputErrorVerify(values[field.name], field.requiredHandler)
-      )
+      ) {
+        if (values[field.name])
+          fieldsError = {
+            ...fieldsError,
+            [field.name]: valuesError[field.name]
+          }
         isButtonInvalid = true
+      } else {
+        fieldsError = { ...fieldsError, [field.name]: false }
+        setValuesError({ ...valuesError, [field.name]: false })
+      }
     })
+    setValuesError(fieldsError)
     setButtonInvalid(isButtonInvalid)
   }
 

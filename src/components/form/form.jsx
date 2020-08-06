@@ -33,7 +33,7 @@ const Form = ({ formSteps, handleFinish }) => {
     if (currentStep > 1) {
       setCurrentStep(currentStep - 1)
     } else {
-      console.log('voltar')
+      // TO DO: include back action
     }
   }
 
@@ -52,7 +52,7 @@ const Form = ({ formSteps, handleFinish }) => {
       <ComponentWrapper>
         <NavbarWrapper>
           <Col size={3} sizeBigTablet={12}>
-            <Back action={previousStep} />
+            {currentStep > 1 && <Back action={previousStep} />}
           </Col>
           <Col size={6} sizeBigTablet={12}>
             <FormSteps
